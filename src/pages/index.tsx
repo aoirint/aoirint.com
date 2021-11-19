@@ -1,54 +1,54 @@
 import * as React from "react"
 
 // styles
-const pageStyles = {
+const pageStyles: React.CSSProperties = {
   color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
-const headingStyles = {
+const headingStyles: React.CSSProperties = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
 }
-const headingAccentStyles = {
+const headingAccentStyles: React.CSSProperties = {
   color: "#663399",
 }
-const paragraphStyles = {
+const paragraphStyles: React.CSSProperties = {
   marginBottom: 48,
 }
-const codeStyles = {
+const codeStyles: React.CSSProperties = {
   color: "#8A6534",
   padding: 4,
   backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
   borderRadius: 4,
 }
-const listStyles = {
+const listStyles: React.CSSProperties = {
   marginBottom: 96,
   paddingLeft: 0,
 }
-const listItemStyles = {
+const listItemStyles: React.CSSProperties = {
   fontWeight: 300,
   fontSize: 24,
   maxWidth: 560,
   marginBottom: 30,
 }
 
-const linkStyle = {
+const linkStyle: React.CSSProperties = {
   color: "#8954A8",
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
 }
 
-const docLinkStyle = {
+const docLinkStyle: React.CSSProperties = {
   ...linkStyle,
   listStyleType: "none",
   marginBottom: 24,
 }
 
-const descriptionStyle = {
+const descriptionStyle: React.CSSProperties = {
   color: "#232129",
   fontSize: 14,
   marginTop: 10,
@@ -62,7 +62,7 @@ const docLink = {
   color: "#8954A8",
 }
 
-const badgeStyle = {
+const badgeStyle: React.CSSProperties = {
   color: "#fff",
   backgroundColor: "#088413",
   border: "1px solid #088413",
@@ -79,7 +79,15 @@ const badgeStyle = {
 }
 
 // data
-const links = [
+interface LinkData {
+  text: string
+  url: string
+  badge?: boolean
+  description: string
+  color: string
+}
+
+const links: LinkData[] = [
   {
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
@@ -126,7 +134,7 @@ const links = [
 ]
 
 // markup
-const IndexPage = () => {
+const IndexPage: React.FC<{}> = () => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
