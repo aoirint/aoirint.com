@@ -139,8 +139,8 @@ const IndexPage: React.FC<{}> = () => {
   return (
     <main style={pageStyles}>
       <Helmet>
+        <title>Home Page</title>
       </Helmet>
-      <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
         <br />
