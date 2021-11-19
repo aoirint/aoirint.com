@@ -1,4 +1,5 @@
 import * as React from "react"
+import Helmet from "react-helmet"
 
 // styles
 const pageStyles: React.CSSProperties = {
@@ -137,6 +138,8 @@ const links: LinkData[] = [
 const IndexPage: React.FC<{}> = () => {
   return (
     <main style={pageStyles}>
+      <Helmet>
+      </Helmet>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
