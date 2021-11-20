@@ -1,6 +1,7 @@
 import * as React from "react"
 import Helmet from "react-helmet"
 
+import icon from '../images/icon.png'
 import {
   Navbar,
   useGitHubRecentRepos,
@@ -21,14 +22,21 @@ const IndexPage: React.FC<{}> = () => {
       <Navbar />
       <section className='section'>
           <div className='container'>
-              <h1 className='title is-2'>
-                  aoirint
-              </h1>
-              <p className='subtitle is-5 is-spaced'>
-                  技術とさぶかる
-              </p>
+              <div className='columns is-vcentered'>
+                <div className='column is-narrow'>
+                  <img src={icon} alt="Logo image" className='image is-64x64 mr-4' />
+                </div>
+                <div className='column'>
+                  <h1 className='title is-2'>
+                      aoirint
+                  </h1>
+                  <p className='subtitle is-5 is-spaced'>
+                      技術とさぶかる
+                  </p>
+                </div>
+              </div>
               <div className='columns'>
-                <div className='column is-one-third-desktop'>
+                <div className='column'>
                   a
                 </div>
                 <div className='column'>

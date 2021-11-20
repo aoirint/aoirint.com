@@ -1,12 +1,12 @@
 import React from 'react'
-import iconFile from '../images/icon.png'
+import icon from '../images/icon.png'
 
 const Navbar: React.FC<{}> = () => {
     return (
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
-                  <img src={iconFile} alt="Logo image" width="28" height="28" />
+                  <img src={icon} alt="Logo image" width="28" height="28" />
                 </a>
 
                 <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
