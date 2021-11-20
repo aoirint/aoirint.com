@@ -156,6 +156,9 @@ const IndexPage: React.FC<{}> = () => {
           😎
         </span>
       </p>
+      <a href="works">
+        Works
+      </a>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
