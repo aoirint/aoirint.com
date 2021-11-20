@@ -18,7 +18,7 @@ const Works: React.FC<{}> = () => {
                         Works
                     </h1>
                     <p className='subtitle'>
-                        作品とプロジェクト開発
+                        関わった作品とプロジェクト開発
                     </p>
                     <p>
                         aaaaa

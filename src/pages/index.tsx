@@ -5,13 +5,69 @@ import icon from '../images/icon.png'
 import {
   Navbar,
   useGitHubRecentRepos,
+  useBlogRecentPosts,
 } from '../components'
+
+interface Activity {
+  category: string
+  title: string
+  url: string
+  date: string
+}
+
+const activities: Activity[] = [
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: 'UIST 2021にて共著者としてデモ発表',
+    url: 'https://dl.acm.org/doi/10.1145/3474349.3480207',
+    date: '2021-10',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: 'トリエ京王調布 こもれびテラスにてデモ展示',
+    url: '#',
+    date: '2020-12',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: '京王あそびの森 HUGHUGにてデモ展示',
+    url: '#',
+    date: '2020-09',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: '第188回HCI研究会にて共著者として採択（口頭発表）',
+    url: '#',
+    date: '2020-06',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: 'GDG DevFest Tokyo 2019にてデモ展示',
+    url: '#',
+    date: '2019-12',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: 'GUGEN 2019にてデモ展示',
+    url: '#',
+    date: '2019-12',
+  },
+  {
+    category: '全周囲ディスプレイゲーム機UPLIGHT',
+    title: 'TGS 2019 センス・オブ・ワンダーナイト 選考ブースにてデモ展示，Best Technological Game Award受賞',
+    url: '#',
+    date: '2019-09',
+  },
+]
 
 // markup
 const IndexPage: React.FC<{}> = () => {
   const {
     repos,
   } = useGitHubRecentRepos()
+  const {
+    posts,
+  } = useBlogRecentPosts()
 
   return (
     <>
@@ -29,20 +85,45 @@ const IndexPage: React.FC<{}> = () => {
                   <h1 className='title is-2'>
                       aoirint
                   </h1>
-                  <p className='subtitle is-5 is-spaced'>
+                  <p className='subtitle is-5'>
                       技術とさぶかる
                   </p>
                 </div>
               </div>
               <div className='columns'>
                 <div className='column'>
-                  a
+                  <h2 className='title is-4'>
+                    Activity
+                  </h2>
+                  <ul>
+                    {activities.map((activity) => (
+                      <li className='mb-2'>
+                        <a href={activity.url} target='_blank' className='mb-2'>
+                          {activity.title}
+                        </a>
+                        <div className='is-size-7'>
+                        {activity.category}, {activity.date}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <div className='column'>
                   <h2 className='title is-4'>
-                    Recent posts
+                    Recent notes
                   </h2>
-                  TBW
+                  <ul>
+                    {posts?.map((post) => (
+                      <li className='mb-2'>
+                        <a href={post.url} target='_blank' className='mb-2'>
+                          {post.title}
+                        </a>
+                        <div className='is-size-7'>
+                          Updated: {post.updatedAt} (Created: {post.createdAt})
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <div className='column'>
                   <h2 className='title is-4'>
