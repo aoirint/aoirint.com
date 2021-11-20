@@ -11,7 +11,7 @@ const HoloPick: React.FC<{}> = () => {
     return (
         <>
             <Helmet>
-                <title>aoirint's Works</title>
+                <title>Holo Pick</title>
             </Helmet>
             <Navbar />
             <section className='section'>
