@@ -8,6 +8,8 @@ import {
 import UplightPhoto from './images/uplight.jpg'
 import HoloPickImage from './images/holopick.png'
 import TabletopEduImage from './images/tabletop_edu.jpg'
+import FloorProjectionImage from './images/floor_projection.jpg'
+import BlankImage from './images/blank.png'
 import SpatialVolumeControllerImage from './images/spatial_volume_controller.jpg'
 
 interface WorkCard {
@@ -34,15 +36,7 @@ const cards: WorkCard[] = [
         imageAlt: 'Holo Pick Usage',
         url: 'holopick/',
         subtitle: '領域分割とペッパーズゴーストによる写真投影システム',
-        date: '2019 ~',
-    },
-    {
-        title: 'テーブルトップディスプレイを活用したグループプログラミング学習ツール',
-        image: TabletopEduImage,
-        imageAlt: 'Workshop Photo',
-        url: 'tabletop_edu/',
-        subtitle: '',
-        date: '2018 ~',
+        date: '2019',
     },
     {
         title: 'UPLIGHT',
@@ -51,6 +45,38 @@ const cards: WorkCard[] = [
         url: 'uplight/',
         subtitle: '全周囲ディスプレイを搭載した携帯型ゲーム機',
         date: '2019-01 ~',
+    },
+    {
+        title: 'テーブルトップディスプレイを活用したグループプログラミング学習ツール',
+        image: TabletopEduImage,
+        imageAlt: 'Workshop Photo',
+        url: 'tabletop_edu/',
+        subtitle: '',
+        date: '2018',
+    },
+    // {
+    //     title: 'GANによる人工言語向け架空文字生成',
+    //     image: BlankImage,
+    //     imageAlt: 'Blank',
+    //     url: 'artificial_characters/',
+    //     subtitle: '',
+    //     date: '2018',
+    // },
+    {
+        title: 'Kinectモーショントラッキングによる床プロジェクションゲーム',
+        image: FloorProjectionImage,
+        imageAlt: 'Floor Projection Photo',
+        url: 'floor_projection/',
+        subtitle: '',
+        date: '2017',
+    },
+    {
+        title: 'mBed LCD Runner',
+        image: BlankImage,
+        imageAlt: 'Blank',
+        url: 'https://gist.github.com/aoirint/d6bd55c0f4f02582ae7c4069b6486e4c',
+        subtitle: '1ボタンキャラクタディスプレイ障害物避けゲーム',
+        date: '2016',
     },
 ]
 
