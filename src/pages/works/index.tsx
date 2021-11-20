@@ -27,7 +27,7 @@ const cards: WorkCard[] = [
         image: SpatialVolumeControllerImage,
         imageAlt: 'Spatial Volume Controller Usage',
         url: 'spatial_volume_controller/',
-        subtitle: '全周囲ディスプレイを搭載した携帯型ゲーム機',
+        subtitle: '動画の音量を空間的なUIで調整するChrome拡張',
         date: '2021-02 ~',
     },
     {
