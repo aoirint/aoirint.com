@@ -10,18 +10,16 @@ import {
   Navbar,
 } from '../components'
 
-const MdxLayout: React.FC<MDXRendererProps> = ({
-    children,
-}) => {
+const MdxLayout: React.FC<MDXRendererProps> = (props) => {
     return (
         <>
             <Helmet>
-                <title>aoirint's Works</title>
+                <title>{props.pageContext.frontmatter.title}</title>
             </Helmet>
             <Navbar />
             <section className='section'>
                 <div className='container'>
-                   {children}
+                    {props.children}
                 </div>
             </section>
         </>
