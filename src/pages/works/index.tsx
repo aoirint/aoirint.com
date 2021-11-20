@@ -51,26 +51,28 @@ const Works: React.FC<{}> = () => {
                     <div className='columns is-multiline'>
                         {cards.map((card) => (
                             <div className='column is-one-quarter'>
-                                <div className="card">
-                                    <div className="card-image">
-                                        <figure className="image is-4by3">
-                                            <img src={card.image} alt="UPLIGHT photo" />
-                                        </figure>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="media">
-                                            <div className="media-content">
-                                                <p className="title is-4">{card.title}</p>
-                                                <p className="subtitle is-6">{card.subtitle}</p>
+                                <a href={card.url}>
+                                    <div className="card">
+                                        <div className="card-image">
+                                            <figure className="image is-4by3">
+                                                <img src={card.image} alt="UPLIGHT photo" />
+                                            </figure>
+                                        </div>
+                                        <div className="card-content">
+                                            <div className="media">
+                                                <div className="media-content">
+                                                    <p className="title is-4">{card.title}</p>
+                                                    <p className="subtitle is-6">{card.subtitle}</p>
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <p>
+                                                    {card.date}
+                                                </p>
                                             </div>
                                         </div>
-                                        <div className="content">
-                                            <p>
-                                                {card.date}
-                                            </p>
-                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         ))}
                     </div>
