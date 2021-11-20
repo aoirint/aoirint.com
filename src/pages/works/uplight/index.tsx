@@ -32,6 +32,10 @@ const Uplight: React.FC<{}> = () => {
                             <a href="https://imedia-lab.net/iml-projects/uplight/">UPLIGHTプロジェクト</a>として製作。
                         </p>
                         <p>
+                            <a href="https://expo.nikkeibp.co.jp/tgs/2019/exhibition/sown/">東京ゲームショウ2019 センス・オブ・ワンダーナイト</a> 選考ブースに採択され、
+                            ファイナリスト選出のうえ、<a href="https://expo.nikkeibp.co.jp/tgs/2019/sown/sensefinal.html">Best Technological Game Award</a>を受賞した。
+                        </p>
+                        <p>
                             Arduino, Unity, 3Dプリンタ, レーザ加工機などを使用した。
                         </p>
                         <p>
