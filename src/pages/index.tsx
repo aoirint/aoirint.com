@@ -27,21 +27,34 @@ const IndexPage: React.FC<{}> = () => {
               <p className='subtitle is-5 is-spaced'>
                   技術とさぶかる
               </p>
-              <h2 className='title is-4'>
-                Recently updated repositories
-              </h2>
-              <ul>
-                {repos?.map((repo) => (
-                  <li className='mb-2'>
-                    <a href={repo.url} target='_blank' className='mb-2'>
-                      {repo.title}
-                    </a>
-                    <div className='is-size-7'>
-                      Updated: {repo.updatedAt} (Created: {repo.createdAt})
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <div className='columns'>
+                <div className='column is-one-third-desktop'>
+                  a
+                </div>
+                <div className='column'>
+                  <h2 className='title is-4'>
+                    Recent posts
+                  </h2>
+                  TBW
+                </div>
+                <div className='column'>
+                  <h2 className='title is-4'>
+                    Active repositories
+                  </h2>
+                  <ul>
+                    {repos?.map((repo) => (
+                      <li className='mb-2'>
+                        <a href={repo.url} target='_blank' className='mb-2'>
+                          {repo.title}
+                        </a>
+                        <div className='is-size-7'>
+                          Updated: {repo.updatedAt} (Created: {repo.createdAt})
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
           </div>
       </section>
     </>
