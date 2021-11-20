@@ -54,14 +54,14 @@ const cards: WorkCard[] = [
         subtitle: '',
         date: '2018',
     },
-    // {
-    //     title: 'GANによる人工言語向け架空文字生成',
-    //     image: BlankImage,
-    //     imageAlt: 'Blank',
-    //     url: 'artificial_characters/',
-    //     subtitle: '',
-    //     date: '2018',
-    // },
+    {
+        title: 'GANによる人工言語向け架空文字生成',
+        image: BlankImage,
+        imageAlt: 'Blank',
+        url: 'artificial_characters/',
+        subtitle: '',
+        date: '2018',
+    },
     {
         title: 'Kinectモーショントラッキングによる床プロジェクションゲーム',
         image: FloorProjectionImage,
