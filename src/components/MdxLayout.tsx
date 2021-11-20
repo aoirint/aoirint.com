@@ -3,6 +3,9 @@ import Helmet from 'react-helmet'
 import '../styles/main.scss'
 
 import {
+    MDXProvider
+} from '@mdx-js/react'
+import {
     MDXRendererProps,
 } from 'gatsby-plugin-mdx'
 
@@ -19,7 +22,15 @@ const MdxLayout: React.FC<MDXRendererProps> = (props) => {
             <Navbar />
             <section className='section'>
                 <div className='container'>
-                    {props.children}
+                    <MDXProvider
+                        components={{
+                            h1: props => <h1 {...props} className='title is-3' />,
+                            h2: props => <h2 {...props} className='title is-4' />,
+                            h3: props => <h3 {...props} className='title is-5' />,
+                        }}
+                    >
+                        {props.children}
+                    </MDXProvider>
                 </div>
             </section>
         </>
