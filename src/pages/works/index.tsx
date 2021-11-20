@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import '../../styles/main.scss'
 import {
     Navbar,
@@ -7,6 +8,9 @@ import {
 const Works: React.FC<{}> = () => {
     return (
         <>
+            <Helmet>
+                <title>aoirint's Works</title>
+            </Helmet>
             <Navbar />
             <section className='section'>
                 <div className='container'>

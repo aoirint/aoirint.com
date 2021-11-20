@@ -16,8 +16,7 @@ const IndexPage: React.FC<{}> = () => {
   return (
     <>
       <Helmet>
-        <title>Home Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>aoirint</title>
       </Helmet>
       <Navbar />
       <section className='section'>
