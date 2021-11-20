@@ -1,5 +1,6 @@
 import * as React from "react"
-import Helmet from "react-helmet"
+import Helmet from 'react-helmet'
+import '../styles/main.scss'
 
 import icon from '../images/icon.png'
 import {
