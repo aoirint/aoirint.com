@@ -23,6 +23,12 @@ const activities: Activity[] = [
     date: '2021-10',
   },
   {
+    category: 'ハッカソン',
+    title: 'サポーターズ ウインターハッカソン vol.7，複数窓配信視聴を快適にするChrome拡張Spatial Volume Controllerをチーム開発，最優秀賞',
+    url: 'https://talent.supporterz.jp/events/28d759c2-50b4-456d-889b-1f08abf6c053/',
+    date: '2021-10',
+  },
+  {
     category: '全周囲ディスプレイゲーム機UPLIGHT',
     title: 'トリエ京王調布 こもれびテラスにてデモ展示',
     url: '#',
