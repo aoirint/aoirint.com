@@ -11,7 +11,7 @@ const SpatialVolumeController: React.FC<{}> = () => {
     return (
         <>
             <Helmet>
-                <title>UPLIGHT</title>
+                <title>Spatial Volume Controller</title>
             </Helmet>
             <Navbar />
             <section className='section'>
