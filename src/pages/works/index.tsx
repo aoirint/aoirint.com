@@ -1,10 +1,25 @@
 import React from 'react'
+import '../../styles/main.scss'
+import Navbar from '../../components/navbar'
 
 const Works: React.FC<{}> = () => {
     return (
-        <h1>
-            Works
-        </h1>
+        <>
+            <Navbar />
+            <section className='section'>
+                <div className='container'>
+                    <h1 className='title'>
+                        Works
+                    </h1>
+                    <p className='subtitle'>
+                        作品とプロジェクト開発
+                    </p>
+                    <p>
+                        aaaaa
+                    </p>
+                </div>
+            </section>
+        </>
     )
 }
 
