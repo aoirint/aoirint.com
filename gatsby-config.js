@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My Gatsby Site",
+    siteUrl: "https://aoirint.com",
+    title: "aoirint",
   },
   plugins: [
     "gatsby-plugin-sitemap",
