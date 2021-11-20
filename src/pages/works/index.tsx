@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../styles/main.scss'
-import Navbar from '../../components/navbar'
+import {
+    Navbar,
+} from '../../components'
 
 const Works: React.FC<{}> = () => {
     return (

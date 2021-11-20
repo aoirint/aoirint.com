@@ -38,6 +38,9 @@ const Navbar: React.FC<{}> = () => {
                             <a className="navbar-item" href="https://github.com/aoirint" target='_blank'>
                                 GitHub
                             </a>
+                            <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint" target='_blank'>
+                                GitHub Contribs
+                            </a>
                             <a className="navbar-item" href="https://qiita.com/aoirint" target='_blank'>
                                 Qiita
                             </a>
@@ -50,7 +53,7 @@ const Navbar: React.FC<{}> = () => {
                             <a className="navbar-item" href="https://www.resume.id/aoirint" target='_blank'>
                                 resume.id
                             </a>
-                            <a className="navbar-item" href="/diary/">
+                            <a className="navbar-item" href="https://vent.aoirint.com/" target='_blank'>
                                 Diary
                             </a>
                         </div>
