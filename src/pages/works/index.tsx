@@ -74,7 +74,7 @@ const cards: WorkCard[] = [
         title: 'mBed LCD Runner',
         image: BlankImage,
         imageAlt: 'Blank',
-        url: 'https://gist.github.com/aoirint/d6bd55c0f4f02582ae7c4069b6486e4c',
+        url: 'mbed_lcd_runner/',
         subtitle: '1ボタンキャラクタディスプレイ障害物避けゲーム',
         date: '2016',
     },
