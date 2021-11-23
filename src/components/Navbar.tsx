@@ -57,7 +57,7 @@ const Navbar: React.FC<{}> = () => {
               <a className="navbar-item" href="https://www.resume.id/aoirint" target='_blank'>
                 resume.id
               </a>
-              <a className="navbar-item" href="https://vent.aoirint.com/" target='_blank'>
+              <a className="navbar-item" href="https://diary.aoirint.com/" target='_blank'>
                 Diary
               </a>
             </div>
