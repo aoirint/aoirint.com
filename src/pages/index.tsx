@@ -131,12 +131,13 @@ const IndexPage: React.FC<{}> = () => {
                               Updated: {post.updatedAt}
                             </>
                           ) : ''}
-                          {' '}
+                          {post.createdAt != null && post.updatedAt != null ? ' (' : ''}
                           {post.createdAt != null ? (
                             <>
-                              (Created: {post.createdAt})
+                              Created: {post.createdAt}
                             </>
                           ) : ''}
+                          {post.createdAt != null && post.updatedAt != null ? ')' : ''}
                         </div>
                       </li>
                     ))}
