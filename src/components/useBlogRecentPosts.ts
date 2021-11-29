@@ -23,7 +23,7 @@ const useBlogRecentPosts = () => {
           const entries = [...xml.querySelectorAll('item')]
           const posts = entries.map((entry) => {
             const title = entry.querySelector('title').textContent
-            const url = entry.querySelector('link').getAttribute('href')
+            const url = entry.querySelector('link').textContent
 
             const pubDate = entry.querySelector('pubDate')?.textContent ?? ''
             const atomUpdated = entry.getElementsByTagName('atom:updated')?.[0]?.textContent ?? ''
