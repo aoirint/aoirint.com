@@ -126,7 +126,17 @@ const IndexPage: React.FC<{}> = () => {
                           {post.title}
                         </a>
                         <div className='is-size-7'>
-                          Updated: {post.updatedAt} (Created: {post.createdAt})
+                          {post.updatedAt != null ? (
+                            <>
+                              Updated: {post.updatedAt}
+                            </>
+                          ) : ''}
+                          {' '}
+                          {post.createdAt != null ? (
+                            <>
+                              (Created: {post.createdAt})
+                            </>
+                          ) : ''}
                         </div>
                       </li>
                     ))}
