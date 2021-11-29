@@ -31,8 +31,6 @@ const useBlogRecentPosts = () => {
             const createdAt = pubDate !== '' ? dayjs(pubDate).format('YYYY-MM-DD') : undefined
             const updatedAt = atomUpdated !== '' ? dayjs(atomUpdated).format('YYYY-MM-DD') : undefined
 
-            console.log(updatedAt)
-
             return {
               title,
               url,
