@@ -7,6 +7,9 @@ import {
 
 import UplightImage from '../images/uplight.jpg'
 
+import { activities } from '../../index'
+
+
 const Uplight: React.FC<{}> = () => {
     return (
         <>
@@ -22,7 +25,7 @@ const Uplight: React.FC<{}> = () => {
                     <p className='subtitle'>
                         全周囲ディスプレイを搭載した携帯型ゲーム機
                     </p>
-                    <div className='contents'>
+                    <div className='content'>
                         <img
                             src={UplightImage}
                             alt="Uplight Photo"
@@ -41,6 +44,21 @@ const Uplight: React.FC<{}> = () => {
                         <p>
                             開発メンバーとして、電装やミドルウェアほかを担当した。
                         </p>
+                        <h2 className='title is-3 mt-4'>
+                            Activity
+                        </h2>
+                        <ul>
+                            {activities
+                                .filter((activity) => activity.category === '全周囲ディスプレイゲーム機UPLIGHT')
+                                .map((activity) => (
+                                    <li>
+                                        <a href={activity.url}>
+                                            {activity.date}: {activity.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </div>
                 </div>
             </section>

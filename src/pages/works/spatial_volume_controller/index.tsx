@@ -28,7 +28,7 @@ const SpatialVolumeController: React.FC<{}> = () => {
                             alt="Spatial Volume Controller Usage"
                         />
                         <p>
-                            <a href="https://talent.supporterz.jp/events/28d759c2-50b4-456d-889b-1f08abf6c053/">サポーターズ ウインターハッカソン vol.7</a>にて、
+                            <a href="https://talent.supporterz.jp/events/28d759c2-50b4-456d-889b-1f08abf6c053/">サポーターズ ウインターハッカソン vol.7</a>（2021年2月）にて、
                             チーム<a href="https://github.com/miniature-octo-guide">Minuature Octo Guide</a>として製作。
                         </p>
                         <p>

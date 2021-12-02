@@ -16,7 +16,7 @@ interface Activity {
   date: string
 }
 
-const activities: Activity[] = [
+export const activities: Activity[] = [
   {
     category: '全周囲ディスプレイゲーム機UPLIGHT',
     title: 'UIST 2021にて共著者としてデモ発表',
