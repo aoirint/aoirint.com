@@ -9,6 +9,9 @@ import {
   useBlogRecentPosts,
 } from '../components'
 
+import UplightPhoto from './works/images/uplight.jpg'
+import BlankImage from './works/images/blank.png'
+
 interface Activity {
   category: string
   title: string
@@ -102,7 +105,44 @@ const IndexPage: React.FC<{}> = () => {
                   <h2 className='title is-4'>
                     Activity
                   </h2>
-                  <ul>
+
+                  <a href="works/uplight/">
+                    <div className="card mb-4">
+                      <div className="card-image">
+                        <figure className="image is-4by3">
+                          <img src={UplightPhoto} alt="UPLIGHT" />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <p className="title is-4">UPLIGHT</p>
+                            <p className="subtitle is-6">研究開発メンバー</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <a href="contribs/voicevox/">
+                    <div className="card">
+                      <div className="card-image">
+                        <figure className="image is-4by3">
+                          <img src={BlankImage} alt="VOICEVOX" />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <p className="title is-4">VOICEVOX</p>
+                            <p className="subtitle is-6">レビュアー</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  {/* <ul>
                     {activities.map((activity) => (
                       <li className='mb-2'>
                         <a href={activity.url} target='_blank' className='mb-2'>
@@ -113,7 +153,7 @@ const IndexPage: React.FC<{}> = () => {
                         </div>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
                 <div className='column'>
                   <h2 className='title is-4'>
