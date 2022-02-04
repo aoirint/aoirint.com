@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import '../styles/main.scss'
 
 import icon from '../images/icon.png'
+import uplightBanner from './images/uplight_banner.jpg'
 import {
   Navbar,
   useGitHubRecentRepos,
@@ -67,6 +68,20 @@ export const activities: Activity[] = [
   },
 ]
 
+export const interests = [
+  {
+    title: 'VOICEVOX',
+    url: 'https://github.com/VOICEVOX',
+    backgroundColor: '#a5d4ad',
+  },
+  {
+    title: 'UPLIGHT',
+    url: '/activity/uplight',
+    backgroundImage: `url(${uplightBanner})`,
+    shadowColor: 'rgba(0,0,0,0.333)',
+  },
+]
+
 // markup
 const IndexPage: React.FC<{}> = () => {
   const {
@@ -100,6 +115,26 @@ const IndexPage: React.FC<{}> = () => {
               <div className='columns'>
                 <div className='column'>
                   <h2 className='title is-4'>
+                    Interests
+                  </h2>
+                  <ul>
+                    {interests.map((interest, index) => (
+                      <li key={index} className='mb-2'>
+                        <a href={interest.url}>
+                          <div style={{backgroundImage: interest.backgroundImage, backgroundColor: interest.backgroundColor, borderRadius: '8px'}}>
+                            <div className="is-flex is-justify-content-right is-align-items-end" style={{backgroundColor: interest.shadowColor, borderRadius: '8px', height: '100px'}}>
+                              <div className="px-3 py-2 is-size-4 has-text-weight-bold" style={{color: '#FFF'}}>
+                                {interest.title}
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {/* <div className='column'>
+                  <h2 className='title is-4'>
                     Activity
                   </h2>
                   <ul>
@@ -114,7 +149,7 @@ const IndexPage: React.FC<{}> = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
                 <div className='column'>
                   <h2 className='title is-4'>
                     Recent notes
