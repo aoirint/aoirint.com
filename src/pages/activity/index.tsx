@@ -28,7 +28,7 @@ const cards: WorkCard[] = [
         imageAlt: 'Spatial Volume Controller Usage',
         url: 'spatial_volume_controller/',
         subtitle: '動画の音量を空間的なUIで調整するChrome拡張',
-        date: '2021-02 ~',
+        date: '2021',
     },
     {
         title: 'Holo Pick',
@@ -44,7 +44,7 @@ const cards: WorkCard[] = [
         imageAlt: 'UPLIGHT Photo',
         url: 'uplight/',
         subtitle: '全周囲ディスプレイを搭載した携帯型ゲーム機',
-        date: '2019-01 ~',
+        date: '2019 ~',
     },
     {
         title: 'テーブルトップディスプレイを活用したグループプログラミング学習ツール',
