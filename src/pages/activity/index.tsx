@@ -80,21 +80,21 @@ const cards: WorkCard[] = [
     },
 ]
 
-const Works: React.FC<{}> = () => {
+const Activities: React.FC<{}> = () => {
     return (
         <>
             <Helmet>
-                <title>aoirint's Works</title>
+                <title>aoirint's Activities</title>
             </Helmet>
             <Navbar />
             <section className='section'>
                 <div className='container'>
                     <h1 className='title'>
-                        Works
+                        Activity
                     </h1>
-                    <p className='subtitle'>
+                    {/* <p className='subtitle'>
                         関わった作品
-                    </p>
+                    </p> */}
                     <div className='columns is-multiline'>
                         {cards.map((card) => (
                             <div className='column is-one-quarter'>
@@ -129,4 +129,4 @@ const Works: React.FC<{}> = () => {
     )
 }
 
-export default Works
+export default Activities

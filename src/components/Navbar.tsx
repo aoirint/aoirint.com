@@ -26,8 +26,8 @@ const Navbar: React.FC<{}> = () => {
             Home
           </a>
 
-          <a className="navbar-item" href="/works/">
-            Works
+          <a className="navbar-item" href="/activity/">
+            Activity
           </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
