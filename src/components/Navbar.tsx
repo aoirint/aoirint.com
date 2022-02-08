@@ -36,22 +36,22 @@ const Navbar: React.FC<{}> = () => {
             </a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint" target='_blank'>
+              <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint">
                 GitHub Contribs
               </a>
-              <a className="navbar-item" href="https://qiita.com/aoirint" target='_blank'>
+              <a className="navbar-item" href="https://qiita.com/aoirint">
                 Qiita
               </a>
-              <a className="navbar-item" href="https://aoirint.hatenablog.com/" target='_blank'>
+              <a className="navbar-item" href="https://aoirint.hatenablog.com/">
                 技術ブログ（旧）
               </a>
-              <a className="navbar-item" href="https://www.resume.id/aoirint" target='_blank'>
+              <a className="navbar-item" href="https://www.resume.id/aoirint">
                 resume.id
               </a>
-              <a className="navbar-item" href="https://diary.aoirint.com/" target='_blank'>
+              <a className="navbar-item" href="https://diary.aoirint.com/">
                 Diary
               </a>
-              <a className="navbar-item" href="https://aoirint.hatenadiary.jp/" target='_blank'>
+              <a className="navbar-item" href="https://aoirint.hatenadiary.jp/">
                 Diary（旧）
               </a>
             </div>
@@ -59,13 +59,13 @@ const Navbar: React.FC<{}> = () => {
         </div>
 
         <div className="navbar-end">
-          <a className="navbar-item" href="https://twitter.com/aoirint" target='_blank'>
+          <a className="navbar-item" href="https://twitter.com/aoirint">
             Twitter
           </a>
-          <a className="navbar-item" href="https://github.com/aoirint" target='_blank'>
+          <a className="navbar-item" href="https://github.com/aoirint">
             GitHub
           </a>
-          <a className="navbar-item" href="https://blog.aoirint.com/" target='_blank'>
+          <a className="navbar-item" href="https://blog.aoirint.com/">
             技術ブログ
           </a>
         </div>
