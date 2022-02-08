@@ -66,7 +66,10 @@ const Navbar: React.FC<{}> = () => {
             GitHub
           </a>
           <a className="navbar-item" href="https://blog.aoirint.com/">
-            技術ブログ
+            Blog
+          </a>
+          <a className="navbar-item" href="https://wiki.aoirint.com/">
+            Wiki
           </a>
         </div>
       </div>
