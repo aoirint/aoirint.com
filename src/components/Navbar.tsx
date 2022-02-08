@@ -36,23 +36,14 @@ const Navbar: React.FC<{}> = () => {
             </a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="https://twitter.com/aoirint" target='_blank'>
-                Twitter
-              </a>
-              <a className="navbar-item" href="https://github.com/aoirint" target='_blank'>
-                GitHub
-              </a>
               <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint" target='_blank'>
                 GitHub Contribs
               </a>
               <a className="navbar-item" href="https://qiita.com/aoirint" target='_blank'>
                 Qiita
               </a>
-              <a className="navbar-item" href="https://blog.aoirint.com/" target='_blank'>
-                技術ノート
-              </a>
               <a className="navbar-item" href="https://aoirint.hatenablog.com/" target='_blank'>
-                技術ノート（旧）
+                技術ブログ（旧）
               </a>
               <a className="navbar-item" href="https://www.resume.id/aoirint" target='_blank'>
                 resume.id
@@ -67,7 +58,17 @@ const Navbar: React.FC<{}> = () => {
           </div>
         </div>
 
-        <div className="navbar-end" />
+        <div className="navbar-end">
+          <a className="navbar-item" href="https://twitter.com/aoirint" target='_blank'>
+            Twitter
+          </a>
+          <a className="navbar-item" href="https://github.com/aoirint" target='_blank'>
+            GitHub
+          </a>
+          <a className="navbar-item" href="https://blog.aoirint.com/" target='_blank'>
+            技術ブログ
+          </a>
+        </div>
       </div>
     </nav>
   )
