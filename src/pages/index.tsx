@@ -157,7 +157,7 @@ const IndexPage: React.FC<{}> = () => {
                   <ul>
                     {posts?.map((post) => (
                       <li className='mb-2'>
-                        <a href={post.url} target='_blank' className='mb-2'>
+                        <a href={post.url} className='mb-2'>
                           {post.title}
                         </a>
                         <div className='is-size-7'>
@@ -185,7 +185,7 @@ const IndexPage: React.FC<{}> = () => {
                   <ul>
                     {repos?.map((repo) => (
                       <li className='mb-2'>
-                        <a href={repo.url} target='_blank' className='mb-2'>
+                        <a href={repo.url} className='mb-2'>
                           {repo.title}
                         </a>
                         <div className='is-size-7'>
