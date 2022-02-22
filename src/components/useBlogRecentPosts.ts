@@ -14,7 +14,7 @@ const useBlogRecentPosts = () => {
 
     React.useEffect(() => {
       if (posts === null) {
-        fetch('https://blog.aoirint.com/channel/技術ノート/rss.xml')
+        fetch('https://blog.aoirint.com/rss.xml')
         .then((data) => data.text())
         .then((data) => {
           const parser = new DOMParser()
