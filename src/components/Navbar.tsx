@@ -48,9 +48,6 @@ const Navbar: React.FC<{}> = () => {
               <a className="navbar-item" href="https://www.resume.id/aoirint">
                 resume.id
               </a>
-              <a className="navbar-item" href="https://diary.aoirint.com/">
-                Diary
-              </a>
             </div>
           </div>
         </div>
