@@ -51,9 +51,6 @@ const Navbar: React.FC<{}> = () => {
               <a className="navbar-item" href="https://diary.aoirint.com/">
                 Diary
               </a>
-              <a className="navbar-item" href="https://aoirint.hatenadiary.jp/">
-                Diary（旧）
-              </a>
             </div>
           </div>
         </div>
