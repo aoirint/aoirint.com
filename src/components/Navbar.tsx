@@ -42,9 +42,6 @@ const Navbar: React.FC<{}> = () => {
               <a className="navbar-item" href="https://qiita.com/aoirint">
                 Qiita
               </a>
-              <a className="navbar-item" href="https://aoirint.hatenablog.com/">
-                技術ブログ（旧）
-              </a>
             </div>
           </div>
         </div>
