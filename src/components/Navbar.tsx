@@ -36,8 +36,11 @@ const Navbar: React.FC<{}> = () => {
             </a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint">
+              <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint+-user%3Aaoirint-web">
                 GitHub Contribs
+              </a>
+              <a className="navbar-item" href="https://qiita.com/aoirint">
+                Qiita
               </a>
               <a className="navbar-item" href="https://qiita.com/aoirint">
                 Qiita
