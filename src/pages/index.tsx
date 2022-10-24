@@ -189,7 +189,7 @@ const IndexPage: React.FC<{}> = () => {
                           {repo.title}
                         </a>
                         <div className='is-size-7'>
-                          Updated: {repo.updatedAt} (Created: {repo.createdAt})
+                          Pushed: {repo.pushedAt} (Created: {repo.createdAt})
                         </div>
                       </li>
                     ))}
