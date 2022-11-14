@@ -55,18 +55,18 @@ jobs:
           cache-from: type=registry,ref=${{ env.IMAGE_NAME_AND_TAG }}-buildcache
           cache-to: type=registry,ref=${{ env.IMAGE_NAME_AND_TAG }}-buildcache,mode=max
 
-        - name: Setup Pages
-          uses: actions/configure-pages@v2
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
 
-        - name: Cache
-          uses: actions/cache@v3
-          with:
-            path: |
-              ./public
-              ./.cache
-            key: ${{ runner.os }}-gatsby-build-cache-v2-${{ github.sha }}
-            restore-keys: |
-              ${{ runner.os }}-gatsby-build-cache-v2-
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ./public
+            ./.cache
+          key: ${{ runner.os }}-gatsby-build-cache-v2-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-cache-v2-
 
       - name: Build
         run: |
