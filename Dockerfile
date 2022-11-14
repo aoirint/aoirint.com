@@ -23,7 +23,7 @@ WORKDIR /work
 ADD --chown=user:user ./package.json ./package-lock.json ./.npmrc /work/
 RUN gosu user npm ci
 
-ADD --chown=user:user ./gatsby-config.ts ./gatsby-node.ts /work/
+ADD --chown=user:user ./gatsby-config.js /work/
 ADD --chown=user:user ./static /work/static
 ADD --chown=user:user ./src /work/src
 
