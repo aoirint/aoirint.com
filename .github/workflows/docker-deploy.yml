@@ -69,6 +69,8 @@ jobs:
             ${{ runner.os }}-gatsby-build-cache-v2-
 
       - name: Build
+        env:
+          IMAGE_NAME_AND_TAG: ${{ format('{0}:{1}', env.IMAGE_NAME, env.IMAGE_TAG) }}
         run: |
           mkdir -p ./public ./.cache
           sudo chown -R "1000:1000" ./public ./.cache
