@@ -77,7 +77,7 @@ jobs:
           docker run --rm --init \
             -v "$PWD/public:/work/public" \
             -v "$PWD/.cache:/work/.cache" \
-            "ghcr.io/aoirint/aoirint.com:latest"
+            "${{ env.IMAGE_NAME_AND_TAG }}"
           sudo chown -R "$(id -u):$(id -g)" ./public ./.cache
 
       - name: Upload artifact
