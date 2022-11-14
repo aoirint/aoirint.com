@@ -14,11 +14,6 @@ env:
   IMAGE_NAME: ghcr.io/aoirint/aoirint.com
   IMAGE_TAG: ${{ github.event.release.tag_name != '' && github.event.release.tag_name || 'latest' }}
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: "pages"
   cancel-in-progress: true
