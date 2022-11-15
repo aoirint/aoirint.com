@@ -11,14 +11,7 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        defaultLayouts: {
-          default: require.resolve("./src/components/MdxLayout.tsx"),
-        },
-      },
-    },
+    "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",
       options: {
