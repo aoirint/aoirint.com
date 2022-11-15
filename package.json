@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "14.x",
-    "npm": "6.x"
+    "node": "18.x",
+    "npm": "8.x"
   },
   "description": "Personal Website",
   "keywords": [
@@ -24,7 +24,7 @@
     "@types/react-helmet": "^6.1.5",
     "bulma": "^0.9.3",
     "dayjs": "^1.10.7",
-    "gatsby": "^4.23.0",
+    "gatsby": "^5.0.0",
     "gatsby-plugin-google-analytics": "^4.23.0",
     "gatsby-plugin-manifest": "^4.23.0",
     "gatsby-plugin-mdx": "^4.2.0",
