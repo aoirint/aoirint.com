@@ -2,8 +2,8 @@
 
 ## Dependencies
 
-- Node 14
-- npm 6
+- Node 18
+- npm 8
 
 ```shell
 npm ci
