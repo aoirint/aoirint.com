@@ -1,0 +1,60 @@
+==================================================================
+https://keybase.io/aoirint
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aoirint.com
+  * I am aoirint (https://keybase.io/aoirint) on keybase.
+  * I have a public key ASBfLm6dncaMKoVFVTxccNciV244S6MYVJxDaGOYoobmAAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201c0e8aa42d5ffd55aeab640b6f1458d122eda1610126bc0e9b5c741bdd104a1d0a",
+      "host": "keybase.io",
+      "kid": "01205f2e6e9d9dc68c2a8545553c5c70d722576e384ba318549c43686398a286e6000a",
+      "uid": "c98c38f4733f2670c772947b8019b419",
+      "username": "aoirint"
+    },
+    "merkle_root": {
+      "ctime": 1668867371,
+      "hash": "90651afa7e060d5b758b2df3053b13021e174ea76cde06f35e82c8c6e31e1d3e80bdd9e570a285f1fbff1f9338392e560e86762fa
+f2520c044008a2d12913ced",
+      "hash_meta": "be658b7571a726fe967094b551c85a0a964fd90f6d29a6b30ff16a70dc46b7a1",
+      "seqno": 23581310
+    },
+    "service": {
+      "entropy": "6waqKKraXHHnUFpvb3iuI6zi",
+      "hostname": "aoirint.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1668867411,
+  "expire_in": 504576000,
+  "prev": "f4746a08774eceb34f2ffb4b9adddeb1990f85f32a562bb57ff45a3252382168",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgXy5unZ3GjCqFRVU8XHDXIlduOEujGFScQ2hjmKKG5gAKp3BheWxvYWTESpcCDsQg9HRqCHdO
+zrNPL/tLmt3esZkPhfMqViu1f/RaMlI4IWjEIAjgt/G/frxVv+Z/WW7+19a53ioekBrKv5IWSLRzX7WLAgHCo3NpZ8RAIPQKN1dWs/WgnrUDAEiv8UvTtIe2
+P1q96j+uKu7uOOjtri5SsYWGeGBU9602ybejVf3PyPqBKcp37oPZA7iYBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBKmeNzhQUihqBgCz98BTwuM
+j0UDcfP9NTieG7JKbg6Yo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aoirint
+
+==================================================================
