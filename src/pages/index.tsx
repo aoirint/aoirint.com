@@ -115,7 +115,7 @@ const IndexPage: React.FC<{}> = () => {
           <div className='columns'>
             <div className='column my-2'>
               <h2 className='title is-4'>
-                Interests
+                興味関心
               </h2>
               <ul>
                 {interests.map((interest, index) => (
@@ -152,7 +152,7 @@ const IndexPage: React.FC<{}> = () => {
                 </div> */}
             <div className='column my-2'>
               <h2 className='title is-4'>
-                Recent notes
+                最近の記事
               </h2>
               <ul>
                 {posts?.map((post) => (
@@ -180,7 +180,7 @@ const IndexPage: React.FC<{}> = () => {
             </div>
             <div className='column my-2'>
               <h2 className='title is-4'>
-                Active repositories
+                最近のリポジトリ
               </h2>
               <ul>
                 {repos?.map((repo) => (
