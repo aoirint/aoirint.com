@@ -90,7 +90,7 @@ const Activities: React.FC<{}> = () => {
       <section className='section'>
         <div className='container'>
           <h1 className='title'>
-            Activity
+            作品ギャラリー
           </h1>
           {/* <p className='subtitle'>
                         関わった作品
