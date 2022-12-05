@@ -180,6 +180,16 @@ const LinksPage: React.FC<{}> = () => {
                     SSS LLC
                   </td>
                 </tr>
+                <tr>
+                  <td className='is-vcentered py-4'>
+                    <a href='https://www.gynoid.co.jp/'>
+                      ガイノイド オフィシャルサイト
+                    </a>
+                  </td>
+                  <td className='is-vcentered py-4'>
+                    Gynoid
+                  </td>
+                </tr>
               </table>
             </div>
           </div>
