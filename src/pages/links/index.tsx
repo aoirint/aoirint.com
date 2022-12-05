@@ -157,6 +157,31 @@ const LinksPage: React.FC<{}> = () => {
                 </tr>
               </table>
             </div>
+            <div className='column is-12 my-2'>
+              <h2 className='title is-4 mt-6 mb-4'>
+                キャラクター
+              </h2>
+              <table className='table'>
+                <tr>
+                  <th className='is-vcentered py-2'>
+                    リンク
+                  </th>
+                  <th className='is-vcentered py-2'>
+                    管理人
+                  </th>
+                </tr>
+                <tr>
+                  <td className='is-vcentered py-4'>
+                    <a href='https://zunko.jp/'>
+                      東北ずん子 公式HP
+                    </a>
+                  </td>
+                  <td className='is-vcentered py-4'>
+                    SSS LLC
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
