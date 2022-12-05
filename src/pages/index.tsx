@@ -98,42 +98,42 @@ const IndexPage: React.FC<{}> = () => {
       </Helmet>
       <Navbar />
       <section className='section'>
-          <div className='container'>
-              <div className='columns is-vcentered'>
-                <div className='column is-narrow'>
-                  <img src={icon} alt="Logo image" className='image is-64x64 mr-4' />
-                </div>
-                <div className='column'>
-                  <h1 className='title is-2'>
-                      aoirint
-                  </h1>
-                  <p className='subtitle is-5'>
-                      技術とさぶかる
-                  </p>
-                </div>
-              </div>
-              <div className='columns'>
-                <div className='column'>
-                  <h2 className='title is-4'>
-                    Interests
-                  </h2>
-                  <ul>
-                    {interests.map((interest, index) => (
-                      <li key={index} className='mb-2'>
-                        <a href={interest.url}>
-                          <div style={{backgroundImage: interest.backgroundImage, backgroundColor: interest.backgroundColor, borderRadius: '8px'}}>
-                            <div className="is-flex is-justify-content-right is-align-items-end" style={{backgroundColor: interest.shadowColor, borderRadius: '8px', height: '100px'}}>
-                              <div className="px-3 py-2 is-size-4 has-text-weight-bold" style={{color: '#FFF'}}>
-                                {interest.title}
-                              </div>
-                            </div>
+        <div className='container'>
+          <div className='columns is-vcentered'>
+            <div className='column is-narrow'>
+              <img src={icon} alt="Logo image" className='image is-64x64 mr-4' />
+            </div>
+            <div className='column'>
+              <h1 className='title is-2'>
+                aoirint
+              </h1>
+              <p className='subtitle is-5'>
+                技術とさぶかる
+              </p>
+            </div>
+          </div>
+          <div className='columns'>
+            <div className='column'>
+              <h2 className='title is-4'>
+                Interests
+              </h2>
+              <ul>
+                {interests.map((interest, index) => (
+                  <li key={index} className='mb-2'>
+                    <a href={interest.url}>
+                      <div style={{ backgroundImage: interest.backgroundImage, backgroundColor: interest.backgroundColor, borderRadius: '8px' }}>
+                        <div className="is-flex is-justify-content-right is-align-items-end" style={{ backgroundColor: interest.shadowColor, borderRadius: '8px', height: '100px' }}>
+                          <div className="px-3 py-2 is-size-4 has-text-weight-bold" style={{ color: '#FFF' }}>
+                            {interest.title}
                           </div>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                {/* <div className='column'>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* <div className='column'>
                   <h2 className='title is-4'>
                     Activity
                   </h2>
@@ -150,53 +150,53 @@ const IndexPage: React.FC<{}> = () => {
                     ))}
                   </ul>
                 </div> */}
-                <div className='column'>
-                  <h2 className='title is-4'>
-                    Recent notes
-                  </h2>
-                  <ul>
-                    {posts?.map((post) => (
-                      <li className='mb-2'>
-                        <a href={post.url} className='mb-2'>
-                          {post.title}
-                        </a>
-                        <div className='is-size-7'>
-                          {post.updatedAt != null ? (
-                            <>
-                              Updated: {post.updatedAt}
-                            </>
-                          ) : ''}
-                          {post.createdAt != null && post.updatedAt != null ? ' (' : ''}
-                          {post.createdAt != null ? (
-                            <>
-                              Created: {post.createdAt}
-                            </>
-                          ) : ''}
-                          {post.createdAt != null && post.updatedAt != null ? ')' : ''}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className='column'>
-                  <h2 className='title is-4'>
-                    Active repositories
-                  </h2>
-                  <ul>
-                    {repos?.map((repo) => (
-                      <li className='mb-2'>
-                        <a href={repo.url} className='mb-2'>
-                          {repo.title}
-                        </a>
-                        <div className='is-size-7'>
-                          Pushed: {repo.pushedAt} (Created: {repo.createdAt})
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+            <div className='column'>
+              <h2 className='title is-4'>
+                Recent notes
+              </h2>
+              <ul>
+                {posts?.map((post) => (
+                  <li className='mb-2'>
+                    <a href={post.url} className='mb-2'>
+                      {post.title}
+                    </a>
+                    <div className='is-size-7'>
+                      {post.updatedAt != null ? (
+                        <>
+                          Updated: {post.updatedAt}
+                        </>
+                      ) : ''}
+                      {post.createdAt != null && post.updatedAt != null ? ' (' : ''}
+                      {post.createdAt != null ? (
+                        <>
+                          Created: {post.createdAt}
+                        </>
+                      ) : ''}
+                      {post.createdAt != null && post.updatedAt != null ? ')' : ''}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className='column'>
+              <h2 className='title is-4'>
+                Active repositories
+              </h2>
+              <ul>
+                {repos?.map((repo) => (
+                  <li className='mb-2'>
+                    <a href={repo.url} className='mb-2'>
+                      {repo.title}
+                    </a>
+                    <div className='is-size-7'>
+                      Pushed: {repo.pushedAt} (Created: {repo.createdAt})
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+        </div>
       </section>
     </>
   )
