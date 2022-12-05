@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import icon from '../images/icon.png'
 
@@ -22,17 +23,17 @@ const Navbar: React.FC<{}> = () => {
 
       <div id="navbarBasicExample" className={`navbar-menu ${active ? 'is-active' : ''}`}>
         <div className="navbar-start">
-          <a className="navbar-item" href="/">
+          <Link className="navbar-item" to="/">
             ホーム
-          </a>
+          </Link>
 
-          <a className="navbar-item" href="/activity/">
+          <Link className="navbar-item" to="/activity/">
             作品ギャラリー
-          </a>
+          </Link>
 
-          <a className="navbar-item" href="/profile/">
+          <Link className="navbar-item" to="/profile/">
             プロフィール
-          </a>
+          </Link>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">
@@ -40,24 +41,38 @@ const Navbar: React.FC<{}> = () => {
             </a>
 
             <div className="navbar-dropdown">
+              <Link className="navbar-item" to="/links/">
+                リンク集
+              </Link>
+
+              <a className="navbar-item" href="https://status.aoirint.com">
+                サービスの稼働状況
+              </a>
+
+              <hr className='navbar-divider' />
+
+              <h4 className='title is-7 mx-2 mt-4 mb-2'>ソーシャル</h4>
+
               <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint">
                 GitHub上の活動を検索
               </a>
-              <a className="navbar-item" href="https://qiita.com/aoirint">
-                Qiita
+
+              <a className="navbar-item" rel="me" href="https://qiita.com/aoirint">
+                Qiita @aoirint
               </a>
+
               <a className="navbar-item" rel="me" href="https://mstdn.aoirint.com/@aoirint">
-                Mastodon
+                Mastodon @aoirint@mstdn.aoirint.com
               </a>
             </div>
           </div>
         </div>
 
         <div className="navbar-end">
-          <a className="navbar-item" href="https://twitter.com/aoirint">
+          <a className="navbar-item" rel="me" href="https://twitter.com/aoirint">
             Twitter
           </a>
-          <a className="navbar-item" href="https://github.com/aoirint">
+          <a className="navbar-item" rel="me" href="https://github.com/aoirint">
             GitHub
           </a>
           <a className="navbar-item" href="https://blog.aoirint.com/">

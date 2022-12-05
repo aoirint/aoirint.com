@@ -38,15 +38,15 @@ const ProfilePage: React.FC<{}> = () => {
               <table className='table'>
                 <tr>
                   <th>Twitter</th>
-                  <td><a href="https://twitter.com/aoirint">@aoirint</a></td>
+                  <td><a rel="me" href="https://twitter.com/aoirint">@aoirint</a></td>
                 </tr>
                 <tr>
                   <th>Mastodon</th>
-                  <td><a href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
+                  <td><a rel="me" href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
                 </tr>
                 <tr>
                   <th>GitHub</th>
-                  <td><a href="https://github.com/aoirint">@aoirint</a></td>
+                  <td><a rel="me" href="https://github.com/aoirint">@aoirint</a></td>
                 </tr>
               </table>
             </div>
