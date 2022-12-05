@@ -23,21 +23,25 @@ const Navbar: React.FC<{}> = () => {
       <div id="navbarBasicExample" className={`navbar-menu ${active ? 'is-active' : ''}`}>
         <div className="navbar-start">
           <a className="navbar-item" href="/">
-            Home
+            ホーム
           </a>
 
           <a className="navbar-item" href="/activity/">
-            Activity
+            作品ギャラリー
+          </a>
+
+          <a className="navbar-item" href="/profile/">
+            プロフィール
           </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">
-              More
+              その他
             </a>
 
             <div className="navbar-dropdown">
               <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint">
-                GitHub Contribs
+                GitHub上の活動を検索
               </a>
               <a className="navbar-item" href="https://qiita.com/aoirint">
                 Qiita

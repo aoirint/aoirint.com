@@ -99,23 +99,23 @@ const IndexPage: React.FC<{}> = () => {
       <Navbar />
       <section className='section'>
         <div className='container'>
-          <div className='columns is-vcentered'>
+          <div className='columns is-vcentered is-mobile'>
             <div className='column is-narrow'>
-              <img src={icon} alt="Logo image" className='image is-64x64 mr-4' />
+              <img src={icon} alt="Logo image" className='image is-96x96' />
             </div>
             <div className='column'>
               <h1 className='title is-2'>
                 aoirint
               </h1>
-              <p className='subtitle is-5'>
+              <p className='subtitle is-6 pt-1'>
                 技術とさぶかる
               </p>
             </div>
           </div>
           <div className='columns'>
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
-                Interests
+                興味関心
               </h2>
               <ul>
                 {interests.map((interest, index) => (
@@ -150,9 +150,9 @@ const IndexPage: React.FC<{}> = () => {
                     ))}
                   </ul>
                 </div> */}
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
-                Recent notes
+                最近の記事
               </h2>
               <ul>
                 {posts?.map((post) => (
@@ -178,9 +178,9 @@ const IndexPage: React.FC<{}> = () => {
                 ))}
               </ul>
             </div>
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
-                Active repositories
+                最近のリポジトリ
               </h2>
               <ul>
                 {repos?.map((repo) => (
