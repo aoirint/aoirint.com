@@ -2,19 +2,19 @@ import React from 'react'
 import dayjs from 'dayjs'
 
 export interface Post {
-    title: string
-    url: string
-    createdAt?: string
-    updatedAt?: string
+  title: string
+  url: string
+  createdAt?: string
+  updatedAt?: string
 }
 
 const useBlogRecentPosts = () => {
-    const [loading, setLoading] = React.useState<boolean>(true)
-    const [posts, setPosts] = React.useState<Post[]>(null)
+  const [loading, setLoading] = React.useState<boolean>(true)
+  const [posts, setPosts] = React.useState<Post[]>(null)
 
-    React.useEffect(() => {
-      if (posts === null) {
-        fetch('https://blog.aoirint.com/rss.xml')
+  React.useEffect(() => {
+    if (posts === null) {
+      fetch('https://blog.aoirint.com/rss.xml')
         .then((data) => data.text())
         .then((data) => {
           const parser = new DOMParser()
@@ -45,13 +45,13 @@ const useBlogRecentPosts = () => {
         .catch((error: unknown) => {
           console.error(error)
         })
-      }
-    })
-
-    return {
-        loading,
-        posts,
     }
+  })
+
+  return {
+    loading,
+    posts,
+  }
 }
 
 export default useBlogRecentPosts
