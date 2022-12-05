@@ -113,7 +113,7 @@ const IndexPage: React.FC<{}> = () => {
             </div>
           </div>
           <div className='columns'>
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
                 Interests
               </h2>
@@ -150,7 +150,7 @@ const IndexPage: React.FC<{}> = () => {
                     ))}
                   </ul>
                 </div> */}
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
                 Recent notes
               </h2>
@@ -178,7 +178,7 @@ const IndexPage: React.FC<{}> = () => {
                 ))}
               </ul>
             </div>
-            <div className='column'>
+            <div className='column my-2'>
               <h2 className='title is-4'>
                 Active repositories
               </h2>
