@@ -94,7 +94,7 @@ const IndexPage: React.FC<{}> = () => {
   return (
     <>
       <Helmet>
-        <title>aoirint</title>
+        <title>aoirint.com</title>
       </Helmet>
       <Navbar />
       <section className='section'>

@@ -38,15 +38,15 @@ const ProfilePage: React.FC<{}> = () => {
               <table className='table'>
                 <tr>
                   <th>Twitter</th>
-                  <td><a href="https://twitter.com/aoirint">@aoirint</a></td>
+                  <td><a rel="me" href="https://twitter.com/aoirint">@aoirint</a></td>
                 </tr>
                 <tr>
                   <th>Mastodon</th>
-                  <td><a href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
+                  <td><a rel="me" href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
                 </tr>
                 <tr>
                   <th>GitHub</th>
-                  <td><a href="https://github.com/aoirint">@aoirint</a></td>
+                  <td><a rel="me" href="https://github.com/aoirint">@aoirint</a></td>
                 </tr>
               </table>
             </div>
@@ -157,7 +157,7 @@ const ProfilePage: React.FC<{}> = () => {
               </h3>
               <div className='content pb-1'>
                 <ul>
-                  <li>トリエ京王調布 こもねびテラス デモ展示（2020年12月） </li>
+                  <li>トリエ京王調布 こもれびテラス デモ展示（2020年12月） </li>
                   <li>京王あそびの森 HUGHUG デモ展示（2020年9月） </li>
                   <li>GDG DevFest Tokyo 2019 学生展示ブース デモ展示（2019年12月） </li>
                   <li>GUGEN2019 デモ展示（2019年12月）</li>

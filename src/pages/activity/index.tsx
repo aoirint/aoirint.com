@@ -84,7 +84,7 @@ const Activities: React.FC<{}> = () => {
   return (
     <>
       <Helmet>
-        <title>aoirint's Activities</title>
+        <title>作品ギャラリー - aoirint.com</title>
       </Helmet>
       <Navbar />
       <section className='section'>
