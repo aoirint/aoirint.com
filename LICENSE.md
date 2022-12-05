@@ -15,7 +15,9 @@ Copyright (c) 2022 aoirint. All rights reserved.
 
 aoirintは著作権を持っていません。
 
-- [詳細](./src/pages/links/banners/NOTICE)
+|ファイル名|著作権表示|
+|:--|:--|
+|`yude_jp.png`|Copyright (c) 2022 yude. All rights reserved.|
 
 
 ## 上記を除いたその他のソースコード
