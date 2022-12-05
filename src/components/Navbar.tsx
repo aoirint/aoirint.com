@@ -8,10 +8,12 @@ const Navbar: React.FC<{}> = () => {
 
   return (
     <>
+      {/* Linkをたどった際など、再レンダリング時に若干下にスクロールしてしまう問題 */}
       <Helmet>
         <body className='has-navbar-fixed-top' />
       </Helmet>
-      <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+
+      <nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
             <img src={icon} alt="Logo image" width="28" height="28" />
