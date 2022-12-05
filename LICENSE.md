@@ -21,6 +21,6 @@ Copyright (c) 2022 aoirint. All rights reserved.
 
 ### 上記を除いたその他のソースコード
 
-ソースコードとは、このWebサイトを構成するために作成され、このリポジトリに含まれるTypeScript/TSXコード、JavaScript/JSXコード、Gatsbyの設定ファイル、CSS、Dockerfileなどのプログラムコード、およびこれらのドキュメントを指します。
+ソースコードとは、このWebサイトを構成するために作成され、このリポジトリに含まれるTypeScript/TSXコード、JavaScript/JSXコード、Gatsbyの設定ファイル、CSS、Dockerfile、GitHub Actions Workflowなどのプログラムコード、およびこれらのドキュメントを指します。
 
 aoirintが著作権を有するこれらのソースコード、および貢献されたソースコードについて、MIT Licenseのもと利用を許諾します。
