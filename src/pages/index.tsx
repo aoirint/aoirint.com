@@ -99,15 +99,15 @@ const IndexPage: React.FC<{}> = () => {
       <Navbar />
       <section className='section'>
         <div className='container'>
-          <div className='columns is-vcentered'>
+          <div className='columns is-vcentered is-mobile'>
             <div className='column is-narrow'>
-              <img src={icon} alt="Logo image" className='image is-64x64 mr-4' />
+              <img src={icon} alt="Logo image" className='image is-96x96' />
             </div>
             <div className='column'>
               <h1 className='title is-2'>
                 aoirint
               </h1>
-              <p className='subtitle is-5'>
+              <p className='subtitle is-6 pt-1'>
                 技術とさぶかる
               </p>
             </div>

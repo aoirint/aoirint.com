@@ -30,6 +30,10 @@ const Navbar: React.FC<{}> = () => {
             Activity
           </a>
 
+          <a className="navbar-item" href="/profile/">
+            プロフィール
+          </a>
+
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">
               More
