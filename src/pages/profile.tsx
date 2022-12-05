@@ -36,18 +36,20 @@ const ProfilePage: React.FC<{}> = () => {
                 連絡先・SNS
               </h2>
               <table className='table'>
-                <tr>
-                  <th>Twitter</th>
-                  <td><a rel="me" href="https://twitter.com/aoirint">@aoirint</a></td>
-                </tr>
-                <tr>
-                  <th>Mastodon</th>
-                  <td><a rel="me" href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
-                </tr>
-                <tr>
-                  <th>GitHub</th>
-                  <td><a rel="me" href="https://github.com/aoirint">@aoirint</a></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>Twitter</th>
+                    <td><a rel="me" href="https://twitter.com/aoirint">@aoirint</a></td>
+                  </tr>
+                  <tr>
+                    <th>Mastodon</th>
+                    <td><a rel="me" href="https://mstdn.aoirint.com/@aoirint">@aoirint@mstdn.aoirint.com</a></td>
+                  </tr>
+                  <tr>
+                    <th>GitHub</th>
+                    <td><a rel="me" href="https://github.com/aoirint">@aoirint</a></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className='column is-6 my-2'>
@@ -55,30 +57,32 @@ const ProfilePage: React.FC<{}> = () => {
                 所属
               </h2>
               <table className='table'>
-                <tr>
-                  <th>2021/12 -</th>
-                  <td><a href="https://github.com/VOICEVOX">VOICEVOX</a> レビュワー</td>
-                </tr>
-                <tr>
-                  <th>2021/04 -</th>
-                  <td>電気通信大学 大学院 情報・ネットワーク工学専攻</td>
-                </tr>
-                <tr>
-                  <th>2017/08 -</th>
-                  <td>某 ソフトウェア開発系企業（アルバイト）</td>
-                </tr>
-                <tr>
-                  <th>2017/04 - 2021/03</th>
-                  <td>電気通信大学 研究開発系サークル インタラクティブメディアラボ</td>
-                </tr>
-                <tr>
-                  <th>2017/04 - 2021/03</th>
-                  <td>電気通信大学 情報理工学域</td>
-                </tr>
-                <tr>
-                  <th>2014/04 - 2017/03</th>
-                  <td>静岡県立富士高等学校</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>2021/12 -</th>
+                    <td><a href="https://github.com/VOICEVOX">VOICEVOX</a> レビュワー</td>
+                  </tr>
+                  <tr>
+                    <th>2021/04 -</th>
+                    <td>電気通信大学 大学院 情報・ネットワーク工学専攻</td>
+                  </tr>
+                  <tr>
+                    <th>2017/08 -</th>
+                    <td>某 ソフトウェア開発系企業（アルバイト）</td>
+                  </tr>
+                  <tr>
+                    <th>2017/04 - 2021/03</th>
+                    <td>電気通信大学 研究開発系サークル インタラクティブメディアラボ</td>
+                  </tr>
+                  <tr>
+                    <th>2017/04 - 2021/03</th>
+                    <td>電気通信大学 情報理工学域</td>
+                  </tr>
+                  <tr>
+                    <th>2014/04 - 2017/03</th>
+                    <td>静岡県立富士高等学校</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className='column is-4 my-2'>

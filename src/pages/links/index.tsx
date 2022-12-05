@@ -31,34 +31,36 @@ const LinksPage: React.FC<{}> = () => {
                 個人サイト
               </h2>
               <table className='table'>
-                <tr>
-                  <th className='is-vcentered py-2'>
-                    リンク
-                  </th>
-                  <th className='is-vcentered py-2'>
-                    管理人
-                  </th>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://www.yude.jp/'>
-                      <StaticImage src='./banners/yude_jp.png' alt='yude.jpのバナー画像' title='yude.jp' />
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    yude さん
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://pickledchair.com/'>
-                      SuitCase's Site
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    SuitCase さん
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th className='is-vcentered py-2'>
+                      リンク
+                    </th>
+                    <th className='is-vcentered py-2'>
+                      管理人
+                    </th>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://www.yude.jp/'>
+                        <StaticImage src='./banners/yude_jp.png' alt='yude.jpのバナー画像' title='yude.jp' />
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      yude さん
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://pickledchair.com/'>
+                        SuitCase's Site
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      SuitCase さん
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className='column is-12 my-2'>
@@ -66,95 +68,97 @@ const LinksPage: React.FC<{}> = () => {
                 ソフトウェア
               </h2>
               <table className='table'>
-                <tr>
-                  <th className='is-vcentered py-2'>
-                    ジャンル
-                  </th>
-                  <th className='is-vcentered py-2'>
-                    リンク
-                  </th>
-                  <th className='is-vcentered py-2'>
-                    管理人
-                  </th>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    音声合成ソフトウェア
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://voicevox.hiroshiba.jp/'>
-                      VOICEVOX
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    VOICEVOX Organization
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    プログラミング言語
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://www.python.org/'>
-                      Python
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    Python Software Foundation
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    JavaScript 環境
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://nodejs.org/'>
-                      Node.js
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    OpenJS Foundation
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    Webフレームワーク
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://www.gatsbyjs.com/'>
-                      Gatsby
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    Gatsby, Inc.
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    GPGPU
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://developer.nvidia.com/'>
-                      NVIDIA Developer
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    NVIDIA Corporation
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    GPGPU
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://pytorch.org/'>
-                      PyTorch
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    PyTorch Foundation
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th className='is-vcentered py-2'>
+                      ジャンル
+                    </th>
+                    <th className='is-vcentered py-2'>
+                      リンク
+                    </th>
+                    <th className='is-vcentered py-2'>
+                      管理人
+                    </th>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      音声合成ソフトウェア
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://voicevox.hiroshiba.jp/'>
+                        VOICEVOX
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      VOICEVOX Organization
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      プログラミング言語
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://www.python.org/'>
+                        Python
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      Python Software Foundation
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      JavaScript 環境
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://nodejs.org/'>
+                        Node.js
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      OpenJS Foundation
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      Webフレームワーク
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://www.gatsbyjs.com/'>
+                        Gatsby
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      Gatsby, Inc.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      GPGPU
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://developer.nvidia.com/'>
+                        NVIDIA Developer
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      NVIDIA Corporation
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      GPGPU
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://pytorch.org/'>
+                        PyTorch
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      PyTorch Foundation
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className='column is-12 my-2'>
@@ -162,34 +166,36 @@ const LinksPage: React.FC<{}> = () => {
                 キャラクター
               </h2>
               <table className='table'>
-                <tr>
-                  <th className='is-vcentered py-2'>
-                    リンク
-                  </th>
-                  <th className='is-vcentered py-2'>
-                    管理人
-                  </th>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://zunko.jp/'>
-                      東北ずん子 公式HP
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    SSS LLC
-                  </td>
-                </tr>
-                <tr>
-                  <td className='is-vcentered py-4'>
-                    <a href='https://www.gynoid.co.jp/'>
-                      ガイノイド オフィシャルサイト
-                    </a>
-                  </td>
-                  <td className='is-vcentered py-4'>
-                    Gynoid
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th className='is-vcentered py-2'>
+                      リンク
+                    </th>
+                    <th className='is-vcentered py-2'>
+                      管理人
+                    </th>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://zunko.jp/'>
+                        東北ずん子 公式HP
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      SSS LLC
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className='is-vcentered py-4'>
+                      <a href='https://www.gynoid.co.jp/'>
+                        ガイノイド オフィシャルサイト
+                      </a>
+                    </td>
+                    <td className='is-vcentered py-4'>
+                      Gynoid
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
