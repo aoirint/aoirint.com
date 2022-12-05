@@ -11,7 +11,7 @@ const Navbar: React.FC<{}> = () => {
       <Helmet>
         <body className='has-navbar-fixed-top' />
       </Helmet>
-      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
             <img src={icon} alt="Logo image" width="28" height="28" />
