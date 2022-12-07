@@ -8,6 +8,7 @@ import {
   Navbar,
   useGitHubRecentRepos,
   useBlogRecentPosts,
+  LastfmApiMiddlewareCard,
 } from '../components'
 
 interface Activity {
@@ -114,6 +115,11 @@ const IndexPage: React.FC<{}> = () => {
           </div>
           <div className='columns'>
             <div className='column my-2'>
+              <h2 className='title is-4'>
+                再生中
+              </h2>
+              <LastfmApiMiddlewareCard />
+
               <h2 className='title is-4'>
                 興味関心
               </h2>
