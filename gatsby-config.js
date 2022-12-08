@@ -31,6 +31,7 @@ module.exports = {
         trackingIds: ["G-L2PECGJKLB"],
         pluginConfig: {
           head: true,
+          respectDNT: true,
         },
       },
     },
