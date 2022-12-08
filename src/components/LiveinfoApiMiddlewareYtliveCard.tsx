@@ -98,7 +98,7 @@ const LiveinfoApiMiddlewareYtliveCard: React.FC<{}> = () => {
               <p className='is-size-7 has-text-right has-text-grey'>
                 Powered by
                 {' '}
-                <a href="https://www.youtube.com/channel/UC7OazbQ3Eo9vrkcReXGIZkQ">YouTube Live</a>
+                <a href="https://www.youtube.com/channel/UC7OazbQ3Eo9vrkcReXGIZkQ">YouTube Data API</a>
               </p>
             </div>
           </div>
