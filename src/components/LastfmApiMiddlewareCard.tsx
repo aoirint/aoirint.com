@@ -102,7 +102,7 @@ const LastfmApiMiddlewareCard: React.FC<{}> = () => {
               <p className='is-size-7 has-text-right has-text-grey'>
                 Powered by
                 {' '}
-                <a href="https://www.last.fm/user/aoirint">AudioScrobbler / Last.fm API</a>.
+                <a href="https://www.last.fm/user/aoirint">AudioScrobbler / Last.fm API</a>
               </p>
             </div>
           </div>

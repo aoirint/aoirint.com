@@ -1,37 +1,40 @@
 import React, { useEffect, useState } from 'react'
 
-interface LiveinfoApiMiddlewareV1NicoliveResponse {
+interface LiveinfoApiMiddlewareV1YtliveResponse {
   program: {
     id: string
     title: string
     description: string
     url: string
-    thumbnails: string[]
+    thumbnails: Record<string, {
+      url: string
+      width: number
+      height: number
+    }>
     startTime: string
     endTime: string
     isOnair: boolean
   }
-  community: {
+  channel: {
     name: string
     url: string
-    iconUrl: string
-  }
-  user: {
-    name: string
-    url: string
-    iconUrl: string
+    thumbnails: Record<string, {
+      url: string
+      width: number
+      height: number
+    }>
   }
 }
 
-const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
+const LiveinfoApiMiddlewareYtliveCard: React.FC<{}> = () => {
   const [loading, setLoading] = React.useState<boolean>(true)
-  const [response, setResponse] = React.useState<LiveinfoApiMiddlewareV1NicoliveResponse | null>(null)
+  const [response, setResponse] = React.useState<LiveinfoApiMiddlewareV1YtliveResponse | null>(null)
 
   useEffect(() => {
     if (response === null) {
-      fetch('https://liveinfo-api-middleware.aoirint.com/v1/nicolive')
+      fetch('https://liveinfo-api-middleware.aoirint.com/v1/ytlive')
         .then((data) => data.json())
-        .then((data: LiveinfoApiMiddlewareV1NicoliveResponse) => {
+        .then((data: LiveinfoApiMiddlewareV1YtliveResponse) => {
           setLoading(false)
           setResponse(data)
         })
@@ -43,16 +46,15 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
 
   const program = response?.program
   const isOnair = program?.isOnair
-  const community = response?.community
-  const user = response?.user
+  const channel = response?.channel
 
   return (
     <>
       <div
         className='card mb-6'
         style={
-          isOnair && program?.thumbnails[0] != null ? {
-            backgroundImage: `url(${program.thumbnails[0]})`,
+          isOnair && program?.thumbnails.standard.url != null ? {
+            backgroundImage: `url(${program.thumbnails.standard.url})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundColor: 'whitesmoke',
@@ -62,7 +64,7 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
         <div
           className="card-content py-4"
           style={
-            isOnair && program?.thumbnails[0] != null ? {
+            isOnair && program?.thumbnails.standard.url != null ? {
               backgroundColor: 'rgba(255, 255, 255, 0.75)',
             } : {}
           }
@@ -77,12 +79,8 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
                     </a>
                   </p>
                   <p className="subtitle is-7 mb-2">
-                    <a href={community?.url ?? '#'} style={{ color: 'inherit' }}>
-                      {community?.name}
-                    </a>
-                    {' - '}
-                    <a href={user?.url ?? '#'} style={{ color: 'inherit' }}>
-                      {user?.name}
+                    <a href={channel?.url ?? '#'} style={{ color: 'inherit' }}>
+                      {channel?.name}
                     </a>
                   </p>
                 </>
@@ -100,7 +98,7 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
               <p className='is-size-7 has-text-right has-text-grey'>
                 Powered by
                 {' '}
-                <a href="https://com.nicovideo.jp/community/co5633084">ニコニコ生放送</a>
+                <a href="https://www.youtube.com/channel/UC7OazbQ3Eo9vrkcReXGIZkQ">YouTube Live</a>
               </p>
             </div>
           </div>
@@ -110,4 +108,4 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
   )
 }
 
-export default LiveinfoApiMiddlewareNicoliveCard
+export default LiveinfoApiMiddlewareYtliveCard

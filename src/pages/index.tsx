@@ -11,6 +11,7 @@ import {
   LastfmApiMiddlewareCard,
 } from '../components'
 import LiveinfoApiMiddlewareNicoliveCard from "../components/LiveinfoApiMiddlewareNicoliveCard"
+import LiveinfoApiMiddlewareYtliveCard from "../components/LiveinfoApiMiddlewareYtliveCard"
 
 interface Activity {
   category: string
@@ -121,6 +122,7 @@ const IndexPage: React.FC<{}> = () => {
               </h2>
               <LastfmApiMiddlewareCard />
               <LiveinfoApiMiddlewareNicoliveCard />
+              <LiveinfoApiMiddlewareYtliveCard />
 
               {/* <h2 className='title is-4'>
                 興味関心
