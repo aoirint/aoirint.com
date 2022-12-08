@@ -48,7 +48,7 @@ const LiveinfoApiMiddlewareYtliveCard: React.FC<{}> = () => {
   const isOnair = program?.isOnair
   const channel = response?.channel
 
-  return (
+  return isOnair ? (
     <>
       <div
         className='card mb-6'
@@ -105,7 +105,7 @@ const LiveinfoApiMiddlewareYtliveCard: React.FC<{}> = () => {
         </div>
       </div>
     </>
-  )
+  ) : <></>
 }
 
 export default LiveinfoApiMiddlewareYtliveCard

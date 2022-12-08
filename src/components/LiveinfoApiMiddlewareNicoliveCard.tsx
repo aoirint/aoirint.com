@@ -46,7 +46,7 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
   const community = response?.community
   const user = response?.user
 
-  return (
+  return isOnair ? (
     <>
       <div
         className='card mb-6'
@@ -107,7 +107,7 @@ const LiveinfoApiMiddlewareNicoliveCard: React.FC<{}> = () => {
         </div>
       </div>
     </>
-  )
+  ) : <></>
 }
 
 export default LiveinfoApiMiddlewareNicoliveCard
