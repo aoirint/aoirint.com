@@ -26,10 +26,12 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        trackingId: "UA-157155944-3",
-        head: true,
+        trackingIds: ["G-L2PECGJKLB"],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],
