@@ -10,6 +10,8 @@ import {
   useBlogRecentPosts,
   LastfmApiMiddlewareCard,
 } from '../components'
+import LiveinfoApiMiddlewareNicoliveCard from "../components/LiveinfoApiMiddlewareNicoliveCard"
+import LiveinfoApiMiddlewareYtliveCard from "../components/LiveinfoApiMiddlewareYtliveCard"
 
 interface Activity {
   category: string
@@ -116,11 +118,13 @@ const IndexPage: React.FC<{}> = () => {
           <div className='columns'>
             <div className='column my-2'>
               <h2 className='title is-4'>
-                再生中
+                ステータス
               </h2>
               <LastfmApiMiddlewareCard />
+              <LiveinfoApiMiddlewareNicoliveCard />
+              <LiveinfoApiMiddlewareYtliveCard />
 
-              <h2 className='title is-4'>
+              {/* <h2 className='title is-4'>
                 興味関心
               </h2>
               <ul>
@@ -137,7 +141,7 @@ const IndexPage: React.FC<{}> = () => {
                     </a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
             {/* <div className='column'>
                   <h2 className='title is-4'>
