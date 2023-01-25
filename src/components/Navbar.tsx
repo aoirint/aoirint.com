@@ -71,6 +71,18 @@ const Navbar: React.FC<{}> = () => {
                 <a className="navbar-item" rel="me" href="https://mstdn.aoirint.com/@aoirint">
                   Mastodon @aoirint@mstdn.aoirint.com
                 </a>
+
+                <a className="navbar-item" rel="me" href="https://pypi.org/user/aoirint/">
+                  PyPI @aoirint
+                </a>
+
+                <a className="navbar-item" rel="me" href="hhttps://pub.dev/publishers/aoirint.com">
+                  pub.dev aoirint.com (未使用)
+                </a>
+
+                <a className="navbar-item" rel="me" href="https://zenn.dev/aoirint">
+                  Zenn @aoirint (未使用)
+                </a>
               </div>
             </div>
           </div>
