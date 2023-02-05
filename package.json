@@ -24,7 +24,7 @@
     "@types/react-helmet": "^6.1.5",
     "bulma": "^0.9.4",
     "dayjs": "^1.11.6",
-    "gatsby": "^5.0.1",
+    "gatsby": "^5.5.0",
     "gatsby-plugin-google-gtag": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.0.0",
