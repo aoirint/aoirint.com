@@ -72,6 +72,10 @@ const Navbar: React.FC<{}> = () => {
                     PyPI @aoirint
                   </a>
 
+                  <a className="navbar-item" rel="me" href="https://hub.docker.com/u/aoirint">
+                    Docker Hub @aoirint
+                  </a>
+
                   <a className="navbar-item" rel="me" href="https://pub.dev/publishers/aoirint.com">
                     pub.dev aoirint.com (未使用)
                   </a>
