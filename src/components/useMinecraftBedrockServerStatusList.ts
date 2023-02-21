@@ -11,7 +11,7 @@ export interface MinecraftBedrockServerStatus {
 
 const useMinecraftBedrockServerStatusList = () => {
   const [loading, setLoading] = React.useState<boolean>(true)
-  const [minecraftBedrockServerStatusList, setMinecraftBedrockServerStatusList] = React.useState<MinecraftBedrockServerStatus[]>(null)
+  const [minecraftBedrockServerStatusList, setMinecraftBedrockServerStatusList] = React.useState<MinecraftBedrockServerStatus[] | null>(null)
 
   React.useEffect(() => {
     if (minecraftBedrockServerStatusList === null) {
@@ -25,7 +25,7 @@ const useMinecraftBedrockServerStatusList = () => {
           console.error(error)
         })
     }
-  })
+  }, [minecraftBedrockServerStatusList])
 
   return {
     loading,

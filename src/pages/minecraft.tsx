@@ -2,8 +2,6 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import '../styles/main.scss'
 
-import icon from '../images/icon.png'
-
 import {
   Navbar, useMinecraftBedrockServerStatusList, useMinecraftJavaServerStatusList,
 } from '../components'
@@ -42,7 +40,7 @@ const MinecraftPage: React.FC<{}> = () => {
                       <th>稼働状態</th>
                       <th>確認時刻</th>
                     </tr>
-                    {bedrockServerStatusList.map((bedrockServerStatus) => (
+                    {bedrockServerStatusList?.map((bedrockServerStatus) => (
                       <tr key={bedrockServerStatus.id}>
                         <td>{bedrockServerStatus.name}</td>
                         <td><code>{`${bedrockServerStatus.host}:${bedrockServerStatus.port}`}</code></td>
@@ -74,7 +72,7 @@ const MinecraftPage: React.FC<{}> = () => {
                       <th>稼働状態</th>
                       <th>確認時刻</th>
                     </tr>
-                    {javaServerStatusList.map((javaServerStatus) => (
+                    {javaServerStatusList?.map((javaServerStatus) => (
                       <tr key={javaServerStatus.id}>
                         <td>{javaServerStatus.name}</td>
                         <td><code>{`${javaServerStatus.host}:${javaServerStatus.port}`}</code></td>
@@ -90,6 +88,9 @@ const MinecraftPage: React.FC<{}> = () => {
               )}
             </div>
           </div>
+          <p className="is-size-7">
+            Powered by <a href="https://github.com/aoirint/aoirint_mcping_server">aoirint_mcping_server</a> + <a href="https://github.com/aoirint/aoirint_mcping_bff">aoirint_mcping_bff</a>.
+          </p>
         </div>
       </section>
     </>
