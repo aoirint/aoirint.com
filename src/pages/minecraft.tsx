@@ -22,6 +22,12 @@ const MinecraftPage: React.FC<{}> = () => {
           <h1 className='title'>
             Minecraftサーバーの稼働状況
           </h1>
+          <p className='pb-4'>
+            このページは試験的なものです。
+          </p>
+          <p className='pb-4'>
+            現在、すべてのサーバーはホワイトリスト制であり、プライベートです。
+          </p>
           <div className='columns is-multiline'>
             <div className='column is-12 my-2'>
               <h2 className='title is-5'>
