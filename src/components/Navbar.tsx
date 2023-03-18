@@ -52,6 +52,10 @@ const Navbar: React.FC<{}> = () => {
                     サービスの稼働状況
                   </a>
 
+                  <Link className="navbar-item" to="/minecraft/">
+                    Minecraftサーバーの稼働状況
+                  </Link>
+
                   <hr className='navbar-divider' />
 
                   <h4 className='title is-7 mx-2 mt-4 mb-2'>ソーシャル</h4>
