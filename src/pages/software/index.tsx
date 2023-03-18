@@ -86,15 +86,15 @@ const libraryCards: SoftwareCard[] = [
     sourceCodeUrl: 'https://github.com/aoirint/aoirint_jmapy',
     detailUrl: null,
   },
-  // {
-  //   title: 'id3py',
-  //   description: 'ID3タグを読み取るPythonライブラリ',
-  //   image: BlankImage,
-  //   imageAlt: 'Blank Image',
-  //   useUrl: null,
-  //   sourceCodeUrl: 'https://github.com/aoirint/id3py',
-  //   detailUrl: null,
-  // },
+  {
+    title: 'id3py',
+    description: 'ID3タグを読み取るPythonライブラリ',
+    image: BlankImage,
+    imageAlt: 'Blank Image',
+    useUrl: 'https://github.com/aoirint/id3py#install',
+    sourceCodeUrl: 'https://github.com/aoirint/id3py',
+    detailUrl: null,
+  },
 ]
 
 const Softwares: React.FC<{}> = () => {
