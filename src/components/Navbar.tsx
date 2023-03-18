@@ -38,16 +38,16 @@ const Navbar: React.FC<{}> = () => {
                 コンテンツ
               </Link>
 
-              <Link className="navbar-item" to="/info/">
-                おしらせ
-              </Link>
-
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">
                   その他
                 </a>
 
                 <div className="navbar-dropdown">
+                  <Link className="navbar-item" to="/info/">
+                    おしらせ
+                  </Link>
+
                   <Link className="navbar-item" to="/service/">
                     サービス
                   </Link>
