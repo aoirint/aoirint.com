@@ -88,7 +88,7 @@ const libraryCards: SoftwareCard[] = [
   },
   {
     title: 'id3py',
-    description: 'ID3タグを読み取るPythonライブラリ',
+    description: 'ID3タグ（MP3ファイルのメタデータ）を読み取るPythonライブラリ',
     image: BlankImage,
     imageAlt: 'Blank Image',
     useUrl: 'https://github.com/aoirint/id3py#install',
