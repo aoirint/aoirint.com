@@ -30,6 +30,10 @@ const Navbar: React.FC<{}> = () => {
                 ホーム
               </Link>
 
+              <Link className="navbar-item" to="/service/">
+                サービス
+              </Link>
+
               <Link className="navbar-item" to="/activity/">
                 作品ギャラリー
               </Link>
