@@ -60,11 +60,11 @@ const Navbar: React.FC<{}> = () => {
                     プロフィール
                   </Link>
 
-                  <hr className='navbar-divider' />
-
                   <Link className="navbar-item" to="/links/">
                     リンク集
                   </Link>
+
+                  <hr className='navbar-divider' />
 
                   <a className="navbar-item" href="https://status.aoirint.com">
                     サービスの稼働状況
@@ -73,11 +73,14 @@ const Navbar: React.FC<{}> = () => {
                   <Link className="navbar-item" to="/minecraft/">
                     Minecraftサーバーの稼働状況
                   </Link>
+                </div>
+              </div>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">
+                  ソーシャル
+                </a>
 
-                  <hr className='navbar-divider' />
-
-                  <h4 className='title is-7 mx-2 mt-4 mb-2'>ソーシャル</h4>
-
+                <div className="navbar-dropdown">
                   <a className="navbar-item" href="https://github.com/pulls?q=involves%3Aaoirint+-user%3Aaoirint">
                     GitHub上の活動を検索
                   </a>
