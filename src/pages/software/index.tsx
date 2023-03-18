@@ -76,6 +76,18 @@ const cards: SoftwareCard[] = [
   },
 ]
 
+const libraryCards: SoftwareCard[] = [
+  {
+    title: 'jmapy',
+    description: '気象庁天気予報データの非公式Pythonラッパー',
+    image: BlankImage,
+    imageAlt: 'Blank Image',
+    useUrl: 'https://github.com/aoirint/aoirint_jmapy/blob/main/README.md#install',
+    sourceCodeUrl: 'https://github.com/aoirint/aoirint_jmapy',
+    detailUrl: null,
+  },
+]
+
 const Softwares: React.FC<{}> = () => {
   return (
     <>
@@ -93,6 +105,43 @@ const Softwares: React.FC<{}> = () => {
           </h2>
           <div className='columns is-multiline'>
             {cards.map((card) => (
+              <div className='column is-full is-half-desktop'>
+                <div className='box'>
+                  <article className="media">
+                    <div className="media-left">
+                      <figure className="image is-1by1 is-64x64">
+                        <img src={card.image} alt="{card.imageAlt}" />
+                      </figure>
+                    </div>
+                    <div className="media-content">
+                      <div className="content">
+                        <h3 className='title is-4 mb-2'>{card.title}</h3>
+                        <p className='mb-3'>
+                          {card.description}
+                        </p>
+                        <div className='buttons'>
+                          {card.useUrl != null ? (
+                            <a href={card.useUrl} className="button is-primary">使ってみる</a>
+                          ) : ''}
+                          {card.sourceCodeUrl != null ? (
+                            <a href={card.sourceCodeUrl} className="button is-light">ソースコード</a>
+                          ) : ''}
+                          {card.detailUrl != null ? (
+                            <a href={card.detailUrl} className="button is-info">詳細</a>
+                          ) : ''}
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className='title is-4 mt-5'>
+            開発者向けライブラリ
+          </h2>
+          <div className='columns is-multiline'>
+            {libraryCards.map((card) => (
               <div className='column is-full is-half-desktop'>
                 <div className='box'>
                   <article className="media">
