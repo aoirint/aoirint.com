@@ -30,16 +30,12 @@ const Navbar: React.FC<{}> = () => {
                 ホーム
               </Link>
 
-              <Link className="navbar-item" to="/service/">
-                サービス
+              <Link className="navbar-item" to="/software/">
+                ソフトウェア
               </Link>
 
-              <Link className="navbar-item" to="/activity/">
-                作品ギャラリー
-              </Link>
-
-              <Link className="navbar-item" to="/profile/">
-                プロフィール
+              <Link className="navbar-item" to="/content/">
+                コンテンツ
               </Link>
 
               <div className="navbar-item has-dropdown is-hoverable">
@@ -48,6 +44,20 @@ const Navbar: React.FC<{}> = () => {
                 </a>
 
                 <div className="navbar-dropdown">
+                  <Link className="navbar-item" to="/service/">
+                    サービス
+                  </Link>
+
+                  <Link className="navbar-item" to="/activity/">
+                    作品ギャラリー
+                  </Link>
+
+                  <Link className="navbar-item" to="/profile/">
+                    プロフィール
+                  </Link>
+
+                  <hr className='navbar-divider' />
+
                   <Link className="navbar-item" to="/links/">
                     リンク集
                   </Link>
