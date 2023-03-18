@@ -56,6 +56,15 @@ const cards: SoftwareCard[] = [
     sourceCodeUrl: 'https://github.com/aoirint/matvtoolpy',
     detailUrl: null,
   },
+  {
+    title: 'PSDLayer2Dir',
+    description: 'PSDファイルのレイヤー構造＋画像をディレクトリ構造＋PNGとしてダンプするコマンドラインツール',
+    image: BlankImage,
+    imageAlt: 'Blank Image',
+    useUrl: 'https://github.com/aoirint/psdlayer2dirpy/blob/main/README.md#usage',
+    sourceCodeUrl: 'https://github.com/aoirint/psdlayer2dirpy',
+    detailUrl: null,
+  },
 ]
 
 const Softwares: React.FC<{}> = () => {
