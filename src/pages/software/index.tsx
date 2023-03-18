@@ -65,6 +65,15 @@ const cards: SoftwareCard[] = [
     sourceCodeUrl: 'https://github.com/aoirint/psdlayer2dirpy',
     detailUrl: null,
   },
+  {
+    title: 'Among Us Range',
+    description: 'Among Usのレンジ設定のスクリーンショット集',
+    image: BlankImage,
+    imageAlt: 'Blank Image',
+    useUrl: 'https://aoirint.github.io/among_us_range/',
+    sourceCodeUrl: 'https://github.com/aoirint/among_us_range',
+    detailUrl: null,
+  },
 ]
 
 const Softwares: React.FC<{}> = () => {
