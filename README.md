@@ -1,5 +1,8 @@
 # aoirint.com
 
+2023-03-21: aoirint.comは、フレームワークをGatsby.jsからNext.jsに変更し、リポジトリを[aoirint/aoirint.com-next](https://github.com/aoirint/aoirint.com-next)に移動しました。
+このリポジトリはアーカイブされます。
+
 ## Dependencies
 
 - Node 18
